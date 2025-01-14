@@ -1,0 +1,54 @@
+<!-- قسم إعدادات الصلاة على النبي -->
+<div class="settings-section prophet-reminder-settings">
+    <h3>الصلاة على النبي ﷺ</h3>
+    
+    <div class="setting-item">
+        <label class="checkbox-container">
+            <input type="checkbox" id="prophetReminderToggle" checked>
+            <span class="checkmark"></span>
+            تفعيل التذكير بالصلاة على النبي ﷺ
+        </label>
+    </div>
+
+    <div class="setting-item">
+        <label class="checkbox-container">
+            <input type="checkbox" id="prophetReminderSoundToggle" checked>
+            <span class="checkmark"></span>
+            تفعيل صوت التذكير
+        </label>
+    </div>
+
+    <div class="setting-item">
+        <label class="setting-label">مستوى صوت التذكير</label>
+        <div class="volume-control">
+            <input type="range" id="prophetReminderVolume" min="0" max="100" value="50" class="volume-slider">
+            <span class="volume-value">50%</span>
+        </div>
+    </div>
+
+    <div class="setting-item">
+        <label class="setting-label">تكرار التذكير</label>
+        <select id="prophetReminderFrequency" class="setting-select">
+            <option value="5">كل 5 دقائق</option>
+            <option value="10">كل 10 دقائق</option>
+            <option value="15">كل 15 دقيقة</option>
+            <option value="20">كل 20 دقيقة</option>
+            <option value="30">كل 30 دقيقة</option>
+            <option value="60" selected>كل ساعة</option>
+            <option value="120">كل ساعتين</option>
+        </select>
+    </div>
+
+    <div class="setting-item">
+        <div class="audio-controls">
+            <button id="testProphetSound" class="preview-button">
+                <i class="fas fa-volume-up"></i>
+                تجربة الصوت
+            </button>
+            <button id="testProphetReminder" class="preview-button">
+                <i class="fas fa-bell"></i>
+                تجربة التذكير
+            </button>
+        </div>
+    </div>
+</div>

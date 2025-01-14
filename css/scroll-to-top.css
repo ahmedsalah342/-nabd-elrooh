@@ -1,0 +1,86 @@
+#scrollToTop,
+#modalScrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999;
+    width: 40px;
+    height: 40px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    -webkit-tap-highlight-color: transparent;
+    /* إزالة كل الخصائص التي قد تسبب المربع الخفيف */
+    box-shadow: none !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+#scrollToTop:hover,
+#modalScrollToTop:hover {
+    opacity: 1;
+    background-color: #7d3c98;
+}
+
+#scrollToTop:active,
+#modalScrollToTop:active {
+    background-color: #7d3c98;
+}
+
+/* خاص بالنوافذ المنبثقة */
+.modal-content {
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    background: transparent; /* إزالة الخلفية */
+}
+
+#modalScrollToTop {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* للموبايل */
+@media (max-width: 768px) {
+    #scrollToTop,
+    #modalScrollToTop {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        bottom: 15px;
+        right: 15px;
+        /* إضافة خصائص خاصة للموبايل */
+        background-color: #8e44ad !important;
+        box-shadow: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+        -webkit-touch-callout: none !important;
+        -webkit-user-select: none !important;
+        user-select: none !important;
+        /* إزالة أي تأثيرات شفافية */
+        opacity: 1 !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        /* إزالة أي حدود أو ظلال */
+        border: none !important;
+        outline: none !important;
+    }
+
+    /* إزالة أي خلفية شفافة من النوافذ المنبثقة على الموبايل */
+    .modal-content {
+        background: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+}

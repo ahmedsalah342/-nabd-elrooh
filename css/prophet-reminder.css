@@ -1,0 +1,120 @@
+/* أنماط قسم تذكير الصلاة على النبي */
+.prophet-reminder-settings {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--bg-secondary);
+    margin-bottom: 20px;
+}
+
+.prophet-reminder-settings h3 {
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    font-family: 'Amiri', serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.prophet-reminder-settings .setting-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--bg-primary);
+}
+
+.prophet-reminder-settings .setting-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+    font-family: 'Cairo', sans-serif;
+}
+
+.prophet-reminder-settings .select-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    font-family: 'Cairo', sans-serif;
+}
+
+.prophet-reminder-settings .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prophet-reminder-settings .volume-control input[type="range"] {
+    flex: 1;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+
+.prophet-reminder-settings .volume-value {
+    min-width: 45px;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.prophet-reminder-settings .btn-primary {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prophet-reminder-settings .btn-primary:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.prophet-reminder-settings .setting-item button {
+    margin: 5px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.prophet-reminder-settings .setting-item button:hover {
+    background-color: #45a049;
+}
+
+/* تحسينات للوضع المظلم */
+[data-theme="dark"] .prophet-reminder-settings {
+    background-color: var(--dark-bg-secondary);
+}
+
+[data-theme="dark"] .prophet-reminder-settings .setting-item {
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme="dark"] .prophet-reminder-settings .select-input {
+    background-color: var(--dark-bg-secondary);
+    border-color: var(--dark-border-color);
+}
+
+/* تحسينات للموبايل */
+@media (max-width: 768px) {
+    .prophet-reminder-settings {
+        padding: 10px;
+    }
+
+    .prophet-reminder-settings .setting-item {
+        padding: 8px;
+    }
+
+    .prophet-reminder-settings h3 {
+        font-size: 1.1em;
+    }
+}

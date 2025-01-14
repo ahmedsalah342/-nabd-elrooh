@@ -1,0 +1,178 @@
+.prophet-reminder-section {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.prophet-reminder-section h4 {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.prophet-reminder-section .setting-item {
+    margin-bottom: 15px;
+}
+
+.prophet-reminder-section .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: var(--bg-secondary);
+    border-radius: 6px;
+}
+
+.prophet-reminder-section .volume-control label {
+    color: var(--text-color);
+    flex: 0 0 auto;
+    min-width: 120px;
+}
+
+.prophet-reminder-section .volume-slider {
+    flex: 1;
+    height: 5px;
+    -webkit-appearance: none;
+    background: var(--border-color);
+    border-radius: 2.5px;
+    outline: none;
+}
+
+.prophet-reminder-section .volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    border: none;
+}
+
+.prophet-reminder-section .volume-value {
+    color: var(--text-color);
+    min-width: 50px;
+    text-align: center;
+}
+
+.prophet-reminder-section .setting-select-container {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: var(--bg-secondary);
+    border-radius: 6px;
+}
+
+.prophet-reminder-section .setting-select-container label {
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.prophet-reminder-section .setting-select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.prophet-reminder-section .audio-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.prophet-reminder-section .preview-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.prophet-reminder-section .preview-button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.prophet-reminder-section .preview-button i {
+    font-size: 16px;
+}
+
+/* تحسينات للموبايل */
+@media (max-width: 768px) {
+    .prophet-reminder-section {
+        padding: 10px;
+    }
+
+    .prophet-reminder-section .volume-control {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .prophet-reminder-section .volume-control label {
+        margin-bottom: 8px;
+    }
+
+    .prophet-reminder-section .audio-controls {
+        flex-direction: column;
+    }
+
+    .prophet-reminder-section .preview-button {
+        width: 100%;
+    }
+}
+
+/* تحسينات للوضع المظلم */
+[data-theme="dark"] .prophet-reminder-section {
+    background-color: #2d2d2d;
+}
+
+[data-theme="dark"] .prophet-reminder-section h4 {
+    color: #fff;
+}
+
+[data-theme="dark"] .prophet-reminder-section .volume-control {
+    background-color: #3d3d3d;
+}
+
+[data-theme="dark"] .prophet-reminder-section .volume-slider {
+    background: #4d4d4d;
+}
+
+[data-theme="dark"] .prophet-reminder-section .volume-slider::-webkit-slider-thumb {
+    background: #5c6bc0;
+}
+
+[data-theme="dark"] .prophet-reminder-section .volume-value {
+    color: #fff;
+}
+
+[data-theme="dark"] .prophet-reminder-section .setting-select-container {
+    background-color: #3d3d3d;
+}
+
+[data-theme="dark"] .prophet-reminder-section .setting-select {
+    background-color: #3d3d3d;
+    border-color: #4d4d4d;
+    color: #fff;
+}
+
+[data-theme="dark"] .prophet-reminder-section .preview-button {
+    background-color: #5c6bc0;
+}
+
+[data-theme="dark"] .prophet-reminder-section .preview-button:hover {
+    background-color: #3f51b5;
+}
