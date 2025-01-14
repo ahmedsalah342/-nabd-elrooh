@@ -1,0 +1,91 @@
+.clock-face {
+    width: 280px;  /* زيادة الحجم */
+    height: 280px; /* زيادة الحجم */
+    border-radius: 50%;
+    position: relative;
+    background: var(--background-color);
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* ظل أقوى */
+    border: 6px solid var(--primary-color);  /* حدود أسمك */
+}
+
+/* العقارب */
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    border-radius: 10px;
+}
+
+.hour-hand {
+    width: 10px;  /* أسمك */
+    height: 28%;  /* أطول شوية */
+    margin-left: -5px;
+    background: #4CAF50;  /* لون أخضر */
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);  /* ظل للعقرب */
+}
+
+.minute-hand {
+    width: 8px;  /* أسمك */
+    height: 38%;  /* أطول شوية */
+    margin-left: -4px;
+    background: #2196F3;  /* لون أزرق */
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);  /* ظل للعقرب */
+}
+
+.second-hand {
+    width: 4px;  /* أسمك */
+    height: 42%;  /* أطول شوية */
+    margin-left: -2px;
+    background: #F44336;  /* لون أحمر */
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);  /* ظل للعقرب */
+}
+
+/* الأرقام */
+.clock-numbers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.clock-number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2em;  /* زيادة حجم الخط */
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* النقطة المركزية */
+.clock-center {
+    position: absolute;
+    width: 24px;  /* أكبر */
+    height: 24px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);  /* ظل للنقطة */
+}
+
+/* تحسين المظهر على الموبايل */
+@media screen and (max-width: 480px) {
+    .clock-face {
+        width: 300px;  /* حجم أكبر على الموبايل */
+        height: 300px;
+        margin: 15px auto;
+        border-width: 8px;  /* حدود أسمك على الموبايل */
+    }
+    
+    .clock-number {
+        font-size: 2.4em;  /* خط أكبر */
+        font-weight: 700;  /* خط أسمك */
+    }
+}
